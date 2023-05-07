@@ -23,6 +23,7 @@ const config: GatsbyConfig = {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
       options: {
+        formatString: "YYYY.MM.DD", // 日付のフォーマットを変更する
         navigation: [
           {
             title: `Blog`,
