@@ -36,4 +36,6 @@ jobs:
 
       # Firebase へのデプロイ
       - name: Deploy to Firebase
-        run: firebase deploy --only hosting --project pastelight-c48c0 --token ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PASTELIGHT_C48C0 }}
+        run: firebase deploy --only hosting --project pastelight-c48c0
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PASTELIGHT_C48C0 }}
