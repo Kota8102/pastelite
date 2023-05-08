@@ -5,4 +5,52 @@ tags:
   - Gatsby
 ---
 
-https://qiita.com/kurosuke1117/items/3ab934dbafbab4c8bf24
+このブログでは、gatsby-starter-minimal-blogを使っています。
+
+ここでは、フッター内のStarterのGitHubリンクを削除する方法を解説します。
+
+### フッターのカスタマイズ
+
+まず、footer.tsxを以下のパスに作成します。
+
+```bash
+src/@lekoarts/gatsby-theme-minimal-blog/components/footer.tsx
+```
+
+次に、以下のようにコードを変更してください。
+
+変更点は、useSiteMetadataのfrom以下とTheme by LekoArtsの部分を削除しています。
+
+```tsx
+/** @jsx jsx */
+import { jsx, Link } from "theme-ui"
+import useSiteMetadata from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-site-metadata"
+
+const Footer = () => {
+  const { siteTitle } = useSiteMetadata()
+
+  return (
+    <footer
+      sx={{
+        boxSizing: `border-box`,
+        display: `flex`,
+        justifyContent: `space-between`,
+        mt: [6],
+        color: `secondary`,
+        a: {
+          variant: `links.secondary`,
+        },
+        flexDirection: [`column`, `column`, `row`],
+        variant: `dividers.top`,
+      }}
+    >
+      <div sx={{ marginLeft: `auto` }}>
+        &copy; {new Date().getFullYear()} by {siteTitle}. All rights reserved.
+      </div>
+    </footer>
+  )
+}
+
+export default Footer
+```
+
