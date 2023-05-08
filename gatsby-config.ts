@@ -39,10 +39,10 @@ const config: GatsbyConfig = {
             name: `Twitter`,
             url: `https://twitter.com/konta478310`,
           },
-          // {
-          //   name: `Homepage`,
-          //   url: `https://www.lekoarts.de?utm_source=minimal-blog&utm_medium=Starter`,
-          // },
+          {
+            name: `GitHub`,
+            url: `https://github.com/Kota8102`,
+          },
         ],
       },
     },
