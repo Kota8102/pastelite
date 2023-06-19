@@ -16,8 +16,10 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/noto-sans-jp": "^5.0.3",
     "@lekoarts/gatsby-theme-minimal-blog": "^6.0.5",
     "firebase": "^9.21.0",
+    "fontsource-sawarabi-gothic": "^4.0.0",
     "gatsby": "^5.3.3",
     "gatsby-plugin-feed": "^5.9.0",
     "gatsby-plugin-manifest": "^5.9.0",
