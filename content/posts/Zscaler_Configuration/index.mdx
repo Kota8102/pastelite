@@ -1,0 +1,36 @@
+---
+title: Zscalerを利用した場合のIPアドレスについて
+date: 2023-08-16
+tags:
+  - Technology
+  - Zscaler
+---
+
+AWSのEC2でセキュリティグループを設定しようとした時、自分のPCのIPを登録しようとしたのですが、Zscalerを利用しているため、IPが可変であるため、登録に困りました。\
+そこで、ZscalerのIPについて調べてみることにしました。
+
+## Zscalerとは
+Zscalerは、クラウドベースのセキュリティソリューションを提供する企業です。
+ユーザーのインターネットトラフィックをリアルタイムで検査し、脅威から保護することを特徴としています。
+従来のハードウェアに依存しないため、スケーラビリティが高く、安全なインターネット利用を実現します。
+
+## ZscalerのIPアドレス (Location: Tokyo IV)
+以下の4つのIPアドレスがZscalerのIPアドレスとして登録されていました。(2021/08/16現在)
+
+1. **165.225.110.0/23**
+
+2. **165.225.96.0/23**
+
+3. **147.161.198.0/23**
+
+4. **136.226.238.0/23**
+
+### 注意事項
+これらのIP範囲は、Zscalerサービス継続性ポリシーに従い、60日間公開された後にいつでも使用開始される可能性があります。\
+そのため、以下のリンクから最新の情報を確認してください。\
+[Cloud Enforcement Node Ranges](https://config.zscaler.com/zscaler.net/cenr)
+
+
+## 関連リンク
+- [Zscaler](https://www.zscaler.jp/)
+- [Cloud Enforcement Node Ranges](https://config.zscaler.com/zscaler.net/cenr)
