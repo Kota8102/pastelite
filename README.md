@@ -1,4 +1,35 @@
-<p align="center">
+# pastelite
+
+## overview
+Pasteliteは、静的な個人サイトとして構築されています。
+このサイトは、Gatsbyのテーマ「@lekoarts/gatsby-theme-minimal-blog」を使用しており、Gatsby、Docker (devcontainer)、およびFirebaseを組み合わせて動作しています。
+
+## Features
+
+## 🚀 Getting Started
+
+### 1. **Create a Gatsby site.**
+
+Use the Gatsby CLI to clone the site and install dependencies:
+
+```sh
+npx gatsby new gatsby-starter-minimal-blog https://github.com/LekoArts/gatsby-starter-minimal-blog
+```
+
+### 2. **Navigate to your new project.**
+
+```sh
+cd pastelite
+```
+
+### 3. **Open the code and start customizing!**
+
+Start the site by running `npm run develop`.
+
+Your site is now running at `http://localhost:8000`!
+
+
+<!-- <p align="center">
   <a href="https://minimal-blog.lekoarts.de">
     <img alt="LekoArts" src="https://img.lekoarts.de/gatsby/gatsby-site-illustration.png" />
   </a>
@@ -222,4 +253,4 @@ To learn more about Gatsby themes specifically, I recommend checking out the [th
 
 Thanks for using this project! I'm always interested in seeing what people do with my projects, so don't hesitate to tag me on [Twitter](https://twitter.com/lekoarts_de) and share the project with me.
 
-Please star this project, share it on Social Media or consider supporting me on [Patreon](https://www.patreon.com/lekoarts) or [GitHub Sponsor](https://github.com/sponsors/LekoArts)!
+Please star this project, share it on Social Media or consider supporting me on [Patreon](https://www.patreon.com/lekoarts) or [GitHub Sponsor](https://github.com/sponsors/LekoArts)! -->
