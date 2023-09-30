@@ -1,7 +1,9 @@
 import { merge, ThemeUIStyleObject } from "theme-ui"
 import tailwind from "@theme-ui/preset-tailwind"
 import { lightThemeVars, darkThemeVars } from "@lekoarts/gatsby-theme-minimal-blog/src/utils/prism-themes"
+// import "modern-css-reset";
 import "@fontsource/noto-sans-jp";
+import "@fontsource/source-code-pro";
 
 declare module "theme-ui" {
   interface Theme {
@@ -66,7 +68,7 @@ const theme = merge(tailwind, {
       },
     },
     p: {
-      fontSize: [1, 1, 2],
+      fontSize: [1, 1],
       letterSpacing: `-0.003em`,
       lineHeight: `body`,
       "--baseline-multiplier": 0.179,
@@ -74,8 +76,8 @@ const theme = merge(tailwind, {
       wordBreak: `break-word`,
     },
     ul: {
-      li: {
-        fontSize: [1, 1, 2],
+      li: { 
+        fontSize: [1, 1],
         letterSpacing: `-0.003em`,
         lineHeight: `body`,
         "--baseline-multiplier": 0.179,
@@ -84,7 +86,7 @@ const theme = merge(tailwind, {
     },
     ol: {
       li: {
-        fontSize: [1, 1, 2],
+        fontSize: [1, 1],
         letterSpacing: `-0.003em`,
         lineHeight: `body`,
         "--baseline-multiplier": 0.179,
@@ -93,22 +95,22 @@ const theme = merge(tailwind, {
     },
     h1: {
         variant: `text.heading`,
-        fontSize: [3, 4, 4, 5],
+        fontSize: [3, 4, 4],
         mt: 4,
     },
         h2: {
         variant: `text.heading`,
-        fontSize: [2, 3, 3, 4],
+        fontSize: [2, 3, 3],
         mt: 4,
     },
         h3: {
         variant: `text.heading`,
-        fontSize: [1, 2, 2, 3],
+        fontSize: [1, 2, 2],
         mt: 4,
     },
         h4: {
         variant: `text.heading`,
-        fontSize: [0, 1, 1, 2],
+        fontSize: [0, 1, 1],
         mt: 3,
     },
         h5: {
@@ -174,7 +176,7 @@ const theme = merge(tailwind, {
   layout: {
     container: {
       padding: [3, 4],
-      maxWidth: `1024px`,
+      maxWidth: `920px`,
     },
     content: {
       figure: {
@@ -244,7 +246,7 @@ const theme = merge(tailwind, {
       },
     },
     listItem: {
-      fontSize: [1, 2, 3],
+      fontSize: [1, 2],
       color: `text`,
     },
   },

@@ -7,16 +7,20 @@ tags:
   - Homebridge
 ---
 
+RaspberryにHomebridgeをインストールするには、Dockerを使用することをお勧めします。
+
 このテキストは、DockerとDocker Composeのインストール方法、およびDockerを使用してhomebridgeをセットアップする手順を提供しています。
 
 ## Docker のインストール
 
 Dockerをインストールするには、次のコマンドを実行します:
 
+
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh [get-docker.sh](http://get-docker.sh/)
+sudo sh get-docker.sh
 ```
+
 
 Dockerをインストールした後、以下のコマンドを使用してユーザーをdockerグループに追加します:
 
@@ -49,7 +53,7 @@ sudo reboot
 
 homebridgeのセットアップには、テキスト内に提供されているDocker Composeの設定があります。この内容でdocker-compose.ymlファイルを作成してください。
 
-```docker
+```bash
 version: '2'
 services:
   homebridge:
@@ -69,7 +73,9 @@ services:
 docker-compose up -d
 ```
 
-サイトにアクセス
+## サイトにアクセスして確認する
+
+Raspberry PiのIPアドレスを使用して、ブラウザで次のURLにアクセスします:
 
 ```bash
 http://ipaddres:8581
