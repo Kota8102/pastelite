@@ -6,7 +6,6 @@ import Layout from "@lekoarts/gatsby-theme-minimal-blog/src/components/layout"
 import ItemTags from "@lekoarts/gatsby-theme-minimal-blog/src/components/item-tags"
 import Seo from "@lekoarts/gatsby-theme-minimal-blog/src/components/seo"
 import PostFooter from "@lekoarts/gatsby-theme-minimal-blog/src/components/post-footer"
-import useBudouX from '../../../components/hooks/useBudouX'
 
 export type MBPostProps = {
   post: {
@@ -36,12 +35,11 @@ const shadow = px.map((v) => `rgba(0, 0, 0, 0.1) 0px ${v} ${v} 0px`)
 
 
 const Post: React.FC<React.PropsWithChildren<PageProps<MBPostProps>>> = ({ data: { post }, children }) => {
-    const { parse } = useBudouX();
     
     return (
       <Layout>
         <Heading as="h1" variant="styles.h1">
-            {parse(post.title)}
+            {post.title}
             </Heading>
             <p sx={{ color: `secondary`, mt: 3, a: { color: `secondary` }, fontSize: [1, 1, 2] }}>
             <time>{post.date}</time>
