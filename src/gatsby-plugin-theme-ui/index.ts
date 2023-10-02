@@ -1,14 +1,17 @@
-import { merge, ThemeUIStyleObject } from "theme-ui"
-import tailwind from "@theme-ui/preset-tailwind"
-import { lightThemeVars, darkThemeVars } from "@lekoarts/gatsby-theme-minimal-blog/src/utils/prism-themes"
+import { merge, ThemeUIStyleObject } from "theme-ui";
+import tailwind from "@theme-ui/preset-tailwind";
+import {
+  lightThemeVars,
+  darkThemeVars,
+} from "@lekoarts/gatsby-theme-minimal-blog/src/utils/prism-themes";
 // import "modern-css-reset";
 import "@fontsource/noto-sans-jp";
 import "@fontsource/source-code-pro";
 
 declare module "theme-ui" {
   interface Theme {
-    copyButton?: ThemeUIStyleObject
-    dividers?: ThemeUIStyleObject
+    copyButton?: ThemeUIStyleObject;
+    dividers?: ThemeUIStyleObject;
   }
 }
 
@@ -76,7 +79,7 @@ const theme = merge(tailwind, {
       wordBreak: `break-word`,
     },
     ul: {
-      li: { 
+      li: {
         fontSize: [1, 1],
         letterSpacing: `-0.003em`,
         lineHeight: `body`,
@@ -94,34 +97,34 @@ const theme = merge(tailwind, {
       },
     },
     h1: {
-        variant: `text.heading`,
-        fontSize: [3, 4, 4],
-        mt: 4,
+      variant: `text.heading`,
+      fontSize: [3, 4, 4],
+      mt: 4,
     },
-        h2: {
-        variant: `text.heading`,
-        fontSize: [2, 3, 3],
-        mt: 4,
+    h2: {
+      variant: `text.heading`,
+      fontSize: [2, 3, 3],
+      mt: 4,
     },
-        h3: {
-        variant: `text.heading`,
-        fontSize: [1, 2, 2],
-        mt: 4,
+    h3: {
+      variant: `text.heading`,
+      fontSize: [1, 2, 2],
+      mt: 4,
     },
-        h4: {
-        variant: `text.heading`,
-        fontSize: [0, 1, 1],
-        mt: 3,
+    h4: {
+      variant: `text.heading`,
+      fontSize: [0, 1, 1],
+      mt: 3,
     },
-        h5: {
-        variant: `text.heading`,
-        fontSize: [0, 1],
-        mt: 3,
+    h5: {
+      variant: `text.heading`,
+      fontSize: [0, 1],
+      mt: 3,
     },
-        h6: {
-        variant: `text.heading`,
-        fontSize: 0,
-        mb: 2,
+    h6: {
+      variant: `text.heading`,
+      fontSize: 0,
+      mb: 2,
     },
     blockquote: {
       borderLeftColor: `primary`,
@@ -176,7 +179,7 @@ const theme = merge(tailwind, {
   layout: {
     container: {
       padding: [3, 4],
-      maxWidth: `920px`,
+      maxWidth: `980px`,
     },
     content: {
       figure: {
@@ -250,6 +253,6 @@ const theme = merge(tailwind, {
       color: `text`,
     },
   },
-})
+});
 
-export default theme
+export default theme;
