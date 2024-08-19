@@ -18,7 +18,7 @@
   "dependencies": {
     "@fontsource/noto-sans-jp": "^5.0.3",
     "@fontsource/source-code-pro": "^5.0.8",
-    "@lekoarts/gatsby-theme-minimal-blog": "^6.0.5",
+    "@lekoarts/gatsby-theme-minimal-blog": "^6.2.3",
     "firebase": "^9.21.0",
     "fontsource-sawarabi-gothic": "^4.0.0",
     "gatsby": "^5.3.3",
