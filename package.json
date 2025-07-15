@@ -19,9 +19,9 @@
     "@fontsource/noto-sans-jp": "^5.0.3",
     "@fontsource/source-code-pro": "^5.0.8",
     "@lekoarts/gatsby-theme-minimal-blog": "^6.0.5",
-    "firebase": "^9.21.0",
+    "firebase": "^10.1.0",
     "fontsource-sawarabi-gothic": "^4.0.0",
-    "gatsby": "^5.3.3",
+    "gatsby": "^5.14.0",
     "gatsby-plugin-feed": "^5.9.0",
     "gatsby-plugin-google-gtag": "^5.11.0",
     "gatsby-plugin-manifest": "^5.9.0",
@@ -31,7 +31,7 @@
     "modern-css-reset": "^1.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "rehype-katex": "^5.0.0",
+    "rehype-katex": "^6.0.3",
     "remark-math": "^3.0.1"
   },
   "devDependencies": {
